@@ -7,7 +7,7 @@ const data = {
     pointerEvents: 'none',
   },
   valid: {
-
+    pointerEvents: 'auto',
   },
   headerStyle: {
     fontSize: '20px',

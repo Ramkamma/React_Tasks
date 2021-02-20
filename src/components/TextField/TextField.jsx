@@ -1,13 +1,17 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { data } from './style';
 
 function TextField(props) {
   // eslint-disable-next-line react/prop-types
-  const { inputLabel, val, type } = props;
+  const {
+    inputLabel, val, type, changeName,
+  } = props;
   return (
     <div>
       <div style={data.headerStyle}>{inputLabel}</div>
-      <input style={data[type]} type="text" value={val} />
+      <input type="text" style={data[type]} defaultValue={val} onChange={changeName} />
     </div>
   );
 }
