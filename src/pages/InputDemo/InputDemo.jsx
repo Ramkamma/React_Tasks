@@ -195,23 +195,25 @@ class InputDemo extends React.PureComponent {
           />
         ) : ''}
         <br />
-        <ButtonComp
-          color="default"
-          disabled={this.state.saveStatus.isSaveDisabled}
-          style={
-            this.state.saveStatus.isSaveDisabled
-              ? constants.SUBMIT_BUTTON_DISABLE : constants.SUBMIT_BUTTON_ENABLE
-          }
-          value="Submit"
-          buttonClick={() => this.handleButtonClick('s')}
-        />
-        <ButtonComp
-          color="default"
-          disabled={false}
-          style={{ float: 'right', marginRight: '10px' }}
-          value="Cancel"
-          buttonClick={() => this.handleButtonClick('c')}
-        />
+        <div style={constants.TEXT_RIGHT}>
+          <ButtonComp
+            color="default"
+            disabled={false}
+            style={{ marginRight: '10px' }}
+            value="Cancel"
+            buttonClick={() => this.handleButtonClick('c')}
+          />
+          <ButtonComp
+            color="default"
+            disabled={this.state.saveStatus.isSaveDisabled}
+            style={
+              this.state.saveStatus.isSaveDisabled
+                ? constants.SUBMIT_BUTTON_DISABLE : constants.SUBMIT_BUTTON_ENABLE
+            }
+            value="Submit"
+            buttonClick={() => this.handleButtonClick('s')}
+          />
+        </div>
       </div>
     );
   }

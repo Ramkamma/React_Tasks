@@ -8,9 +8,9 @@ function ButtonComp(props) {
     color, disabled, style, value, buttonClick,
   } = props;
   return (
-    <span>
+    <>
       <button type="button" style={style} onClick={buttonClick} disabled={disabled}>{value}</button>
-    </span>
+    </>
   );
 }
 export default ButtonComp;

@@ -16,11 +16,14 @@ export const FOOTBALL_DATA = [
   { label: 'Striker', value: 'Striker' },
 ];
 export const SUBMIT_BUTTON_ENABLE = {
-  float: 'right', backgroundColor: 'green', color: 'white',
+  backgroundColor: 'green', color: 'white',
 };
 export const SUBMIT_BUTTON_DISABLE = {
-  float: 'right', backgroundColor: 'grey', color: 'darkgrey',
+  backgroundColor: 'grey', color: 'darkgrey',
 };
 export const ERROR_TEXT = {
   color: 'red',
+};
+export const TEXT_RIGHT = {
+  textAlign: 'right',
 };
