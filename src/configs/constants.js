@@ -15,3 +15,12 @@ export const FOOTBALL_DATA = [
   { label: 'Defender', value: 'Defender' },
   { label: 'Striker', value: 'Striker' },
 ];
+export const SUBMIT_BUTTON_ENABLE = {
+  float: 'right', backgroundColor: 'green', color: 'white',
+};
+export const SUBMIT_BUTTON_DISABLE = {
+  float: 'right', backgroundColor: 'grey', color: 'darkgrey',
+};
+export const ERROR_TEXT = {
+  color: 'red',
+};

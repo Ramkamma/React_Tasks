@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <SliderComp />
+      <hr />
       <TextFieldDemo />
+      <hr />
       <InputDemo />
     </div>
   );
