@@ -33,7 +33,7 @@ function MathComponent(props) {
     finalResult = `${first}${operator}${second}=${result}`;
   }
   return (
-    <div>{finalResult}</div>
+    <>{finalResult}</>
   );
 }
 export default MathComponent;
