@@ -42,7 +42,7 @@ class InputDemo extends React.PureComponent {
   }
 
   handleNameChange(event) {
-    if (event.target.value) {
+    if (event.target && event.target.value) {
       this.setState(() => ({
         name: event.target.value,
         nameFormFields: {
