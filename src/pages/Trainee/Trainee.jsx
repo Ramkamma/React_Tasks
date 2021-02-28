@@ -7,6 +7,8 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import AddDialog from './Components/AddDialog/AddDialog';
+import NavbarComponent from '../components/Navbar/Navbar';
+import LoginComponet from '../Login/Login';
 
 class Trainee extends React.Component {
   constructor(props) {
@@ -35,7 +37,8 @@ class Trainee extends React.Component {
   render() {
     return (
       <div>
-        <Button variant="outlined" color="primary" onClick={() => this.openTraineeDialog()}>ADD TRAINEE</Button>
+        <NavbarComponent />
+        <Button variant="outlined" style={{ marginTop: '10px' }} color="primary" onClick={() => this.openTraineeDialog()}>ADD TRAINEE</Button>
         {/* onClose={() => this.closeTraineeDialog()} */}
         <Dialog open={this.state.open} aria-labelledby="form-dialog-title">
           <DialogTitle>Add Trainee</DialogTitle>
@@ -49,6 +52,7 @@ class Trainee extends React.Component {
             />
           </DialogContent>
         </Dialog>
+        <LoginComponet />
       </div>
     );
   }
