@@ -27,3 +27,11 @@ export const ERROR_TEXT = {
 export const TEXT_RIGHT = {
   textAlign: 'right',
 };
+export const REMOVE_LINK_STYLES = {
+  color: 'white',
+  textDecoration: 'unset',
+  marginRight: '5px',
+  padding: '6px 8px',
+  fontSize: '0.875rem',
+  fontfamily: 'Roboto", "Helvetica", "Arial", sans-serif',
+};
