@@ -1,15 +1,16 @@
 import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
+// import { ThemeProvider } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import TextFieldDemo from './pages/TextFieldDemo/TextFieldDemo';
 import SliderComp from './components/Slider/Slider';
 import InputDemo from './pages/InputDemo/InputDemo';
 import ChildrenDemo from './pages/ChildrenDemo/ChildrenDemo';
-import * as themeComp from './theme';
+import Trainee from './pages/Trainee/Trainee';
+// import * as themeComp from './theme';
 
 function App() {
   return (
-    <ThemeProvider theme={themeComp.theme}>
+    <div>
       <SliderComp />
       <hr />
       <TextFieldDemo />
@@ -19,7 +20,9 @@ function App() {
       <Typography>
         <ChildrenDemo />
       </Typography>
-    </ThemeProvider>
+      <hr />
+      <Trainee />
+    </div>
   );
 }
 
